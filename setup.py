@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='delnone',
-      version='0.1',
+      version='0.2',
       description='Function which removes "None"s from data structures.',
       url='https://github.com/andrewguy9/delnone',
       author='andrew thomson',
