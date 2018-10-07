@@ -1,4 +1,3 @@
-import pytest
 import collections
 import json
 import sys
