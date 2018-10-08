@@ -4,18 +4,9 @@ import sys
 
 def delnone(i):
   if isinstance(i, dict):
-    o = {}
-    for (key, value) in i.items():
-      value = delnone(value)
-      if value is not None:
-        o[key] = value
+    o = {key:delnone(value) for (key,value) in i.items() if value is not None}
   elif isinstance(i, list):
-    o = []
-    for value in i:
-      value = delnone(value)
-      if value is not None:
-        o.append(value)
+    o = [value for delnone(value) in i if value is not None]
   else:
     o = i
   return o
-
