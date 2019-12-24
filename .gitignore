@@ -1,0 +1,9 @@
+.coverage
+.tox/
+build/
+dist/
+env/
+htmlcov/
+__pycache__
+*.pyc
+delnone.egg-info/
